@@ -91,12 +91,12 @@ class IndexController extends Controller
         $Gender = $data1['gender'];
         //return View('Info',['Id' => $id,'Name'=>$Name,'Age'=>$Age,'City'=>$City,'Job'=>$Job,'Gender'=>$Gender]);
        return View('Info')
-            ->with('Id',$id)
-            ->with('Name',$Name)
-            ->with('Age',$Age)
-            ->with('City',$City)
-            ->with('Job',$Job)
-            ->with('Gender',$Gender);
+            ->with('Id',$data1['id'])
+            ->with('Name',$data1['name'])
+            ->with('Age',$data1['age'])
+            ->with('City',$data1['city'])
+            ->with('Job',$data1['job'])
+            ->with('Gender',$data1['gender']);
     }
 
     public function InsertStudent()
@@ -121,7 +121,15 @@ class IndexController extends Controller
 
     public function AlterInfo()
     {
-        return view ('Alterinfo');
+        $data = Login::SearchStudentInfo();
+        $data1 = (array)$data;
+        return View('Alterinfo')
+            ->with('Id',$data1['id'])
+            ->with('Name',$data1['name'])
+            ->with('Age',$data1['age'])
+            ->with('City',$data1['city'])
+            ->with('Job',$data1['job'])
+            ->with('Gender',$data1['gender']);
     }
 
     public function InsertStudentInfoByHand()

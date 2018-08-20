@@ -38,7 +38,12 @@ class Login extends Base
             ->first();
         return $num;
     }
-    
+
+    public static function getStudentInfoAll()
+    {
+        $num = $student=DB::select("select * from T_Info");
+        return $num;
+    }
     //插入学生信息
     public static function InsertStudentInfoByHand($Name,$Age,$City,$Job,$Gender)
     {

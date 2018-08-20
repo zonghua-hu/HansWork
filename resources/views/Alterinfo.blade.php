@@ -18,32 +18,16 @@
       <td style="width: 100px;height: 50px;">Opeation</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <td>{{$Id}}</td>
+      <td>{{$Name}}</td>
+      <td>{{$Age}}</td>
+      <td>{{$City}}</td>
+      <td>{{$Job}}</td>
+      <td>{{$Gender}}</td>
       <td><a href="Change.blade.php">修改</a> <a href="Delete.blade.php" >删除</a></td>
     </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td><a href="Change.blade.php">修改</a> <a href="Delete.blade.php" >删除</a></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td><a href="Change.blade.php">修改</a> <a href="Delete.blade.php" >删除</a></td>
-    </tr>
+
+
 
   </table>
 

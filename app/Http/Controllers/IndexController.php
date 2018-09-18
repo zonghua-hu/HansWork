@@ -20,6 +20,11 @@ class IndexController extends Controller
         return view('Login');
     }
 
+    public function index()
+    {
+        return view('indexone');
+
+    }
     /**
      * 登录方法
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

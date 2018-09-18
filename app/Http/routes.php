@@ -13,8 +13,8 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-
-Route::get('/','IndexController@Login');
+Route::get('/','IndexController@index');
+Route::get('/login','IndexController@Login');
 Route::post('/Manager','IndexController@Manager');
 Route::get('/Register','IndexController@Register');
 Route::post('/RegisterSubmit','IndexController@RegisterSubmit');

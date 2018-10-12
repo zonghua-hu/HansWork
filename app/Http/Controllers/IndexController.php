@@ -124,6 +124,9 @@ class IndexController extends Controller
         return view ('Alterinfo');
     }
 
+    /**
+     * 插入数据的方法
+     */
     public function InsertStudentInfoByHand()
     {
         if ($input = Input::all()) {
@@ -138,6 +141,11 @@ class IndexController extends Controller
         {
             echo '插入成功！';
         }
+    }
+
+    public function arrayToObject($e)
+    {
+        return true;
     }
 
 }
